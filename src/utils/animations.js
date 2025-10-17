@@ -146,3 +146,83 @@ export const bounceIn = (delay = 0) => ({
   },
   viewport: { once: true, amount: 0.3 },
 });
+
+// Page Transitions
+export const pageTransition = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+  transition: { duration: 0.4, ease: easeOutExpo }
+};
+
+export const slideTransition = {
+  initial: { opacity: 0, x: -100 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 100 },
+  transition: { duration: 0.5, ease: easeOutExpo }
+};
+
+// Loading Animations
+export const pulseAnimation = {
+  animate: {
+    scale: [1, 1.05, 1],
+    opacity: [0.7, 1, 0.7]
+  },
+  transition: {
+    duration: 1.5,
+    repeat: Infinity,
+    ease: easeInOut
+  }
+};
+
+export const shimmerAnimation = {
+  animate: {
+    backgroundPosition: ['-200% 0', '200% 0']
+  },
+  transition: {
+    duration: 1.5,
+    repeat: Infinity,
+    ease: 'linear'
+  }
+};
+
+// Loading States
+export const loadingContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  }
+};
+
+export const loadingItem = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: easeOutExpo
+    }
+  }
+};
+
+// Skeleton Loading
+export const skeletonAnimation = {
+  animate: {
+    background: [
+      'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)',
+      'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)'
+    ],
+    backgroundSize: ['200% 100%', '200% 100%'],
+    backgroundPosition: ['-200% 0', '200% 0']
+  },
+  transition: {
+    duration: 1.5,
+    repeat: Infinity,
+    ease: 'linear'
+  }
+};
