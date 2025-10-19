@@ -413,13 +413,6 @@ END //
 
 DELIMITER ;
 
--- =====================================================
--- COMMENTS FOR DOCUMENTATION
--- =====================================================
-
--- Note: Database comments are not supported in MySQL ALTER DATABASE syntax
--- The database comment would need to be added manually if needed
-
 -- Table comments (these work in MySQL)
 ALTER TABLE users COMMENT = 'User accounts for clients with profile photos and authentication';
 ALTER TABLE services COMMENT = 'Available services offered by Syntaxtrust';
