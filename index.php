@@ -30,14 +30,6 @@ require_once 'app/controllers/HomeController.php';
 // Initialize router
 $router = new Router();
 
-// Define routes
-$router->get('/', 'HomeController', 'index');
-$router->get('/services', 'HomeController', 'services');
-$router->get('/pricing', 'HomeController', 'pricing');
-$router->get('/portfolio', 'HomeController', 'portfolio');
-$router->get('/contact', 'HomeController', 'contact');
-$router->get('/schedule', 'HomeController', 'schedule');
-
 // API routes
 $router->get('/api/available-slots', 'HomeController', 'getAvailableSlots');
 
@@ -48,6 +40,9 @@ $router->get('/admin/logout', 'AuthController', 'logout');
 $router->get('/admin/forgot-password', 'AuthController', 'forgotPassword');
 $router->post('/admin/reset-password', 'AuthController', 'resetPassword');
 
+// Define routes
+// Default route langsung ke halaman login dari folder auth
+$router->get('/', 'AuthController', 'login');
 // Admin routes (protected)
 $router->get('/admin/dashboard', 'AdminController', 'dashboard');
 $router->get('/admin/services', 'AdminController', 'services');

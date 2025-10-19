@@ -167,41 +167,6 @@
 </div>
 <?php endif; ?>
 
-<!-- Quick Stats -->
-<div class="row mb-4">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="row text-center">
-                    <div class="col-md-3 mb-3">
-                        <div class="d-flex flex-column">
-                            <h4 class="mb-1">50+</h4>
-                            <small class="text-muted">Project Selesai</small>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="d-flex flex-column">
-                            <h4 class="mb-1">98%</h4>
-                            <small class="text-muted">Kepuasan Klien</small>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="d-flex flex-column">
-                            <h4 class="mb-1">24/7</h4>
-                            <small class="text-muted">Support</small>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="d-flex flex-column">
-                            <h4 class="mb-1">3</h4>
-                            <small class="text-muted">Tahun Pengalaman</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Call to Action -->
 <div class="row">
